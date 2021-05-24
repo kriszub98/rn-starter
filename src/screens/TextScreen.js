@@ -17,6 +17,7 @@ const TextScreen = () => {
 				onChangeText={(newValue) => setName(newValue)}
 			/>
 			<Text>{name}</Text>
+			{name.length < 5 ? <Text>Too short of a value</Text> : <Text />}
 		</View>
 	);
 };
